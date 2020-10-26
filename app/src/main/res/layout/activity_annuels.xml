@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/mimagelayout"
+            android:layout_width="match_parent"
+            android:layout_height="137dp"
+            android:layout_marginTop="16dp"
+            android:orientation="vertical"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="255dp"
+                android:layout_height="77dp"
+                app:layout_constraintBottom_toTopOf="@+id/linearLayout2"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/captureannuels" />
+            <LinearLayout
+                android:id="@+id/mmenuprincipal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:orientation="horizontal"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+                <Button
+                    android:id="@+id/menu2"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="#559FDD"
+                    android:text="  Calculer couts mensuels  "
+                    android:textAllCaps="false"
+                    android:textSize="12sp" />
+
+                <Button
+                    android:id="@+id/mmenup"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="#00BCD4"
+                    android:text="      Menu Principal     "
+                    android:textSize="10sp" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearLayout2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/mimagelayout"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="50dp"
+            android:layout_marginBottom="40dp"
+            android:orientation="vertical"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/mimagelayout"
+            app:layout_constraintVertical_bias="0.0">
+
+            <TextView
+                android:id="@+id/textView8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="#FFFFFF"
+                android:text="Cout Machine Qprost"
+                android:textColor="#559FDD"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/meditText4"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:autofillHints=""
+                android:background="#559FDD"
+                android:ems="8"
+                android:inputType="number"
+                android:textColor="#FFFFFF"
+                android:textSize="24sp" />
+
+            <TextView
+                android:id="@+id/textView9"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="#FFFFFF"
+                android:text=" Cout d'une machine a bonbonne "
+                android:textColor="#559FDD"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/meditText3"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:autofillHints=""
+                android:background="#559FDD"
+                android:ems="8"
+                android:inputType="number"
+                android:textColor="#F1EAEA"
+                android:textSize="24sp" />
+
+            <TextView
+                android:id="@+id/textView10"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="#FFFFFF"
+                android:text="Cout mensuel Fontaine Qprost"
+                android:textColor="#559FDD"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/meditText2"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:autofillHints=""
+                android:background="#559FDD"
+                android:ems="8"
+                android:inputType="number"
+                android:textColor="#F5F1F1"
+                android:textSize="24sp" />
+
+            <TextView
+                android:id="@+id/textView11"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="#FFFFFF"
+                android:text=" Cout mensuel fontaine a Bonbonne"
+                android:textColor="#559FDD"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/meditText"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:autofillHints="Numero"
+                android:background="#559FDD"
+                android:inputType="number"
+                android:textColor="#F7EFEF"
+                android:textSize="24sp" />
+
+            <TextView
+                android:id="@+id/annee"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="#FFFFFF"
+                android:text=" Nombre d'années d'utilisation"
+                android:textColor="#559FDD"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/annee2"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:autofillHints="Numero"
+                android:background="#559FDD"
+                android:inputType="number"
+                android:textColor="#F7EFEF"
+                android:textSize="24sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/resultats"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentBottom="true"
+            android:orientation="vertical"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+
+
+
+            app:layout_constraintVertical_bias="0.75">
+
+            <TextView
+                android:id="@+id/textView7"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="4dp"
+                android:background="#097CD8"
+                android:text="Couts cumulés des fontaines"
+                android:textAllCaps="true"
+                android:textColor="#FFFFFF"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/mbonbonne"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="4dp"
+                android:background="#FFFFFF"
+                android:text="fontaines à bonbonne : 0"
+                android:textColor="#D60E0E"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/mqprost"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="4dp"
+                android:background="#FFFFFF"
+                android:text="fontaines Qprost : 0 "
+                android:textColor="#4CAF50"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/mdifference"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:background="#FFFFFF"
+                android:text="Difference : 0 "
+                android:textColor="#FFC107"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:layout_marginBottom="20dp"/>
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</ScrollView>

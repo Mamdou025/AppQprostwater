@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.xstudioo.QprostX">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/iconne"
+        android:label="Qprost"
+        android:roundIcon="@drawable/iconne"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name="com.xstudioo.QprostX.AddNote" />
+        <activity android:name="com.xstudioo.QprostX.Detail" />
+        <activity android:name="com.xstudioo.QprostX.Meno" />
+        <activity android:name="com.xstudioo.QprostX.annuelsb" />
+        <activity android:name="com.xstudioo.QprostX.mensuels" />
+        <activity android:name="com.xstudioo.QprostX.MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
